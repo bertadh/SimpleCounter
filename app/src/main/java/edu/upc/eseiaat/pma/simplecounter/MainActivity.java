@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increase (View v){
-        Log.i("bertadh","Increment clicat");
-
+        //Log.i("bertadh","Increment clicat");
         String snum = edit_num.getText().toString();
         int num = Integer.parseInt(snum)+1;
         snum = Integer.toString(num);
@@ -27,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void decrement(View v){
-        //TODO: Decrementar el numero
-        Log.i("bertadh","decrement clicat");
-        //edit_num = edit_num.getText()-1;
+        //Log.i("bertadh","Decrement clicat");
+        String snum = edit_num.getText().toString();
+        int num = Integer.parseInt(snum)-1;
+        snum = Integer.toString(num);
+        edit_num.setText(snum);
     }
 }
